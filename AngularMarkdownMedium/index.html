@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>AMM</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+
+    <script src="Scripts/modernizr-2.6.2.js"></script>
+    <script src="Scripts/showdown.js" type="text/javascript"></script>
+    <script src="Scripts/angular.min.js" type="text/javascript"></script>
+    <script src="Scripts/angular-sanitize.min.js" type="text/javascript"></script>
+    <script src="Scripts/angular-route.min.js" type="text/javascript"></script>
+
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="Modules/ammHeader/ammHeaderModule.js"></script>
+    <script src="Modules/ammHeader/ammHeaderDirective.js"></script>
+    <script src="Modules/ammHeader/ammHeaderController.js"></script>
+    <script src="Modules/ammHeader/ammHeaderItemDirective.js"></script>
+
+    <script src="Modules/ammContainer/ammContainerModule.js"></script>
+    <script src="Modules/ammContainer/ammContainerDirective.js"></script>
+    <script src="Modules/ammContainer/ammContainerController.js"></script>
+
+    <script src="Modules/ammPage/ammPageModule.js"></script>
+
+    <script src="App/appModule.js" type="text/javascript"></script>
+    <script src="App/appConfig.js" type="text/javascript"></script>
+    <script src="App/appRouteConfig.js" type="text/javascript"></script>
+</head>
+<body class="container-fluid" ng-app="app">
+    <amm-container>
+        <amm-header>
+            <li data-amm-header-item label="AMM" route="home"></li>
+            <li data-amm-header-item label="Authors" route="authors"></li>
+            <li data-amm-header-item label="Posts" route="posts"></li>
+            <li data-amm-header-item label="Tags" route="tags"></li>
+        </amm-header>
+    </amm-container>
+</body>
+</html>

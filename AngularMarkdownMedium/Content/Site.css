@@ -1,0 +1,62 @@
+﻿html
+{
+    font-size: 100%;
+}
+body {
+
+    color: #24282d;
+    font-family: "Calibri";
+}
+
+.container-fluid
+{
+    padding: 0 !important;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.label-tag
+{
+    margin-right: 0.2rem;
+}
+
+.post-title
+{
+    font-family: Arial;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.post-content
+{
+    margin: 2rem 0;
+    font-family: Georgia;
+    font-size: 1.25rem;
+}
+.post-author .post-author-name,.post-author .post-author-byline
+{
+    padding-left: 1rem;
+    margin: 0.3125rem 0;
+}
+.post-author .post-author-byline
+{
+    color: #4c5259;
+    font-weight: lighter;
+}
+
+
+
+.post-author .post-author-twitterhandle
+{
+    color: #52a0ff;
+}
+
+.post-author img
+{
+    border-radius: 30px;
+}
